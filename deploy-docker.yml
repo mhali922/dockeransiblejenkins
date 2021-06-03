@@ -1,7 +1,7 @@
 ---
 - hosts: webserver
   become: True
-    tasks:
+  tasks:
     - name: Install python pip
       yum:
         name: python-pip
