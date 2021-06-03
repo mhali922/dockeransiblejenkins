@@ -21,8 +21,8 @@
         state: present
     - name: start the container
       docker_container:
-        name: ansibleapp
-        image: "mhali/ansibleapp:{{DOCKER_TAG}}"
+        name: myapp_java
+        image: "mhali/myapp_java:{{DOCKER_TAG}}"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
