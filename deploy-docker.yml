@@ -18,7 +18,7 @@
     - name: Install docker-py python module
       pip:
         name: docker-py
-        state: present
+        #state: present
     - name: start the container
       docker_container:
         name: myapp_java
