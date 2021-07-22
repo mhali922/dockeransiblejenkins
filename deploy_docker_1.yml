@@ -24,9 +24,9 @@
         name: "mhali/myapp_java:{{DOCKER_TAG}}"
         source: pull
         
-    - name: start the container
+    - name: create the container
       docker_container:
-        name: myapp_java
+        name: "myapp_java"
         image: "mhali/myapp_java"
         state: started
         published_ports:
