@@ -32,7 +32,7 @@ pipeline{
                     sh "docker login -u mhali -p ${dockerhub}"
                 }
                 
-                sh "docker push mhali/myapp_Java:${DOCKER_TAG} "
+                sh "docker push mhali/myapp_java:${DOCKER_TAG} "
             }
         }
         
